@@ -1,0 +1,55 @@
+classe Círculo:
+    função contrutor(raio):
+        raio do círculo = Raio
+    função área(raio do círculo):
+        área = (raio do círculo)**2 + 3,14
+        imprimir(área)
+    função circunferência(raio do círculo):
+        circunferência = (raio do círculo)* 6,28
+        Imprimir (circunferência)
+    Classe Ponto:
+        função Construtor(Z, W):
+            eixo x= Z
+            eixo y= W
+        função localização(eixo x, eixo y):
+            imprimir('Seu ponto está localizado nas coordenardas (',eixo x,', ',eixo y,')')
+    Classe Reta:
+        função Construtor( X1, Y1, X2, Y2):
+            Primeiro ponto(x) = X1
+            Primeiro ponto(y) = Y1
+            Segundo ponto(x) = X2
+            Segundo ponto(y) = Y2
+        função tamanho(Primeiro ponto(x), Primeiro ponto(y), Segundo ponto(x), Segundo ponto(y) = Y2):
+            tamanho = ( ( (Segundo ponto(x)-Primeiro ponto(x))**2) + ((Segundo ponto(y)-Primeiro ponto(y))**2) )**(1/2)
+            Imprimir ('O tamanho da sua reta é ', tamanho,'.')
+
+main:
+    escolha uma das opções: círculo, reta, ponto.
+    caso escolha círculo:
+        R1 = informe o raio do círculo:
+        círculo1 = Círculo(R1)
+        escolha uma das opções: área do círculo, circunferência do círculo
+        caso escolha área do círculo:
+            círculo1.área()
+        caso escolha circunferência do círculo:
+            círculo1.circunferência()
+    caso escolha ponto:
+        x = informe a coordenada x do ponto
+        y = informe a coordenada y do ponto
+        ponto1 = ponto(x, y)
+        voçê gostaria de saber a posição do seu ponto? (S/N)
+        caso S:
+            ponto1.localização()
+        caso N:
+            retornar para a linha 33
+    caso escolha Reta:
+        w = informe a coordenada x1 da reta
+        x = informe a coordenada y1 da reta
+        y = informe a coordenada x2 da reta
+        z = informe a coordenada y2 da reta
+        reta1 = Reta(w, x, y, z):
+        você gostaria de saber o tamanho da reta? (S/N)
+        caso S:
+            reta1.tamanho()
+        caso N:        
+            retornar para a linha 33
